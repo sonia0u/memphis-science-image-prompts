@@ -4,27 +4,32 @@
 
 ## 一键安装
 
-**方式 A · 一条命令（推荐）**
+Skill 内容采用 **Anthropic Agent Skills 标准格式**（`SKILL.md` + `name`/`description` 头），因此不止 WorkBuddy 能用——Claude Code、Codex、Cursor 等所有遵循该标准的 agent 都能识别。安装脚本会**自动检测本机已安装的 agent**，把 Skill 同时装进它们各自的 `skills/` 目录。
 
-复制下面这行到终端执行，脚本会自动把 Skill 装进 WorkBuddy 的 `skills/` 目录：
+**方式 A · 一条命令（推荐，自动适配所有 agent）**
 
 ```bash
 curl -fsSL https://raw.githubusercontent.com/sonia0u/memphis-science-image-prompts/main/install.sh | bash
 ```
 
-> 脚本会先检测 skills 目录（macOS/Linux 为 `~/.workbuddy/skills`，Windows 为 `D:/AI-Skills`），已存在同名 Skill 时自动备份为 `.bak` 再覆盖，安全可重跑。
+- 自动识别并安装到：`~/.workbuddy/skills`（WorkBuddy，含 Windows `D:/AI-Skills`）、`~/.claude/skills`（Claude Code）、`~/.codex/skills`（Codex）、`~/.cursor/skills`（Cursor）；若当前目录有 `.claude/skills` 也会装。
+- 未检测到任何已知 agent 时，回退装到 WorkBuddy 默认目录。
+- 已存在同名 Skill 时自动备份为 `.bak` 再覆盖，安全可重跑。
+- 可选参数：`--list`（只列出会安装到哪）、`--agent claude`（只装某个 agent）、`--target <目录>`（装到指定目录）。
 
 **方式 B · 让 Agent 帮你装**
 
-在 WorkBuddy（或任意 AI 助手）里直接说：
+在 WorkBuddy / Claude Code / 任意 AI 助手对话里直接说：
 
 > 帮我把这个 skill 装上：https://github.com/sonia0u/memphis-science-image-prompts
 
-Agent 会自行克隆仓库、把 `image-memphis-gzh--prompt-c/` 文件夹放进 `skills/` 目录，装完重启即可用。
+Agent 会自行克隆仓库、把 `image-memphis-gzh--prompt-c/` 放进对应 `skills/` 目录，装完重启即可用。
 
 **方式 C · 手动**
 
-把 [`image-memphis-gzh--prompt-c/`](./image-memphis-gzh--prompt-c) 整个文件夹拖进 WorkBuddy 的 `skills/` 目录（用户级或项目级）即可。
+把 [`image-memphis-gzh--prompt-c/`](./image-memphis-gzh--prompt-c) 整个文件夹拖进目标 agent 的 `skills/` 目录即可。
+
+> 注：`agents/openai.yaml` 是 WorkBuddy 专用扩展，其它 agent 会自动忽略该文件，不影响功能。
 
 ## 怎么用
 
