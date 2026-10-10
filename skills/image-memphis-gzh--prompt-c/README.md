@@ -16,7 +16,7 @@
 ## 目录结构
 
 ```
-image-memphis-gzh--prompt-c/
+skills/image-memphis-gzh--prompt-c/
 ├── SKILL.md               # Skill 定义（name + description + 工作流）
 ├── meta.yaml              # 展示元数据（Hub 兼容）
 ├── README.md              # 本文件
@@ -33,9 +33,15 @@ image-memphis-gzh--prompt-c/
 
 ## 安装 / 使用
 
-1. 将整个 `image-memphis-gzh--prompt-c` 文件夹放入 WorkBuddy 的 `skills/` 目录（用户级或项目级）。
-2. 对 AI 说：「帮我把这篇文章做成孟菲斯风科普图提示词」，并贴入完整文章（或给出本地 md 路径）。
-3. Skill 会输出分镜表 + 每张图的独立提示词，复制提示词到绘图工具即可。
+1. 社区标准安装（推荐，自动装到本机已识别的 agent）：
+
+   ```bash
+   npx skills add sonia0u/memphis-science-image-prompts
+   ```
+
+2. 或手动把整个 `image-memphis-gzh--prompt-c` 文件夹放入目标 agent 的 `skills/` 目录。
+3. 对 AI 说：「帮我把这篇文章做成孟菲斯风科普图提示词」，并贴入完整文章（或给出本地 md 路径）。
+4. Skill 会输出分镜表 + 每张图的独立提示词，复制提示词到绘图工具即可。
 
 也可在对话中直接触发关键词：孟菲斯科普图、扁平插画科普图、撞色科普图、memphis 科普图。
 
