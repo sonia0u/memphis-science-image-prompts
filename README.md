@@ -2,9 +2,33 @@
 
 一套 WorkBuddy Skill：**孟菲斯扁平插画风的公众号 / 小红书系列科普图提示词生成器**。把一篇完整文章拆成 3–5 张风格统一的 3:4 竖版生图提示词，配色与装饰元素全部锁定，可直接喂给 AI 绘图工具出图。
 
+## 一键安装
+
+**方式 A · 一条命令（推荐）**
+
+复制下面这行到终端执行，脚本会自动把 Skill 装进 WorkBuddy 的 `skills/` 目录：
+
+```bash
+curl -fsSL https://raw.githubusercontent.com/sonia0u/memphis-science-image-prompts/main/install.sh | bash
+```
+
+> 脚本会先检测 skills 目录（macOS/Linux 为 `~/.workbuddy/skills`，Windows 为 `D:/AI-Skills`），已存在同名 Skill 时自动备份为 `.bak` 再覆盖，安全可重跑。
+
+**方式 B · 让 Agent 帮你装**
+
+在 WorkBuddy（或任意 AI 助手）里直接说：
+
+> 帮我把这个 skill 装上：https://github.com/sonia0u/memphis-science-image-prompts
+
+Agent 会自行克隆仓库、把 `image-memphis-gzh--prompt-c/` 文件夹放进 `skills/` 目录，装完重启即可用。
+
+**方式 C · 手动**
+
+把 [`image-memphis-gzh--prompt-c/`](./image-memphis-gzh--prompt-c) 整个文件夹拖进 WorkBuddy 的 `skills/` 目录（用户级或项目级）即可。
+
 ## 怎么用
 
-Skill 本体在 [`image-memphis-gzh--prompt-c/`](./image-memphis-gzh--prompt-c) 文件夹里。把整个文件夹拖进 WorkBuddy 的 `skills/` 目录（用户级或项目级）即可启用，对 AI 说「帮我把这篇文章做成孟菲斯风科普图提示词」并贴入文章。
+Skill 本体在 [`image-memphis-gzh--prompt-c/`](./image-memphis-gzh--prompt-c) 文件夹里。安装后（方式 A/B/C 任一）对 AI 说「帮我把这篇文章做成孟菲斯风科普图提示词」并贴入文章。
 
 ## 目录
 
