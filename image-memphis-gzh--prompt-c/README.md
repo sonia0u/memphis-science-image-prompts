@@ -49,6 +49,20 @@ image-memphis-gzh--prompt-c/
 - 图 4 方法：五分钟法则，先换鞋
 - 图 5 收尾：先把鞋穿上，剩下的走着瞧
 
+## 效果预览
+
+![图 1 封面：深夜枕头上的脑中讨论会](examples/1.png)
+
+![图 2 机制：大脑空转＝死踩油门的车](examples/2.png)
+
+![图 3 真相：做了才想清楚（简历→灯泡路径）](examples/3.png)
+
+![图 4 方法：五分钟法则，先换鞋](examples/4.png)
+
+![图 5 收尾：先把鞋穿上，剩下的走着瞧](examples/5.png)
+
+风格来源参考图见 [`examples/style-reference.png`](examples/style-reference.png)。
+
 ## 来源
 
 本 Skill 由 `image-blue-gzh--prompt-c`（温柔蓝灰治愈系科普图提示词）派生，仅将视觉体系替换为孟菲斯扁平插画风，工作流、分镜与文案规则保持不变。
