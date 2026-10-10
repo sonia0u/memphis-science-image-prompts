@@ -1,0 +1,15 @@
+display-name-zh: 孟菲斯风科普图提示词
+version: 0.1.0
+tag-en: "Creative & Experimental"
+tag-cn: "创意实验"
+complete-tags-en:
+  - "Content Creation / Creative Generation"
+complete-tags-cn:
+  - "内容创作 / 创作生成"
+summary-en: "Turn a full article into 3–5 unified 3:4 science-popularization image prompts in Memphis flat-illustration style with fixed palette and decorative motifs, for WeChat and Xiaohongshu."
+summary-cn: "把完整文章拆成 3–5 张孟菲斯扁平风 3:4 科普图提示词，配色与装饰元素固定统一，适合公众号与小红书配图。"
+desc-en: "A prompt-generation Skill that converts a complete Chinese article into 3 to 5 vertically formatted (3:4) science-popularization image prompts in a consistent Memphis flat-illustration visual system. It reads the full article, builds a content map, selects 1 to 3 core units, and writes a storyboard plus one fully self-contained prompt per image. The fixed visual system uses a five-color palette (periwinkle blue, coral red, cream apricot, navy, white), Memphis decorative elements (cross stars, plus signs, dots, diagonal lines, speed lines, concentric circles), halftone dot texture, and a rounded cartoon girl character. Output is prompt text only — no image generation or publishing. Best for creators who need a coherent illustrated series for WeChat Official Accounts or Xiaohongshu; not for realistic photography or non-illustration styles."
+desc-cn: "一个提示词生成 Skill，把一篇完整中文文章转化为 3 至 5 张 3:4 竖版的系列科普图提示词，并锁定孟菲斯扁平插画视觉体系。它先通读全文、建立内容地图，按文章结构选 1 至 3 个核心内容单元，再输出一张分镜表和每张图各自独立、可直接复制的生图提示词。固定视觉系统包含五色配色（长春花蓝、珊瑚红、奶油杏、深藏青、白）、孟菲斯装饰元素（十字星、加号、圆点、斜线、速度线、同心圆）、半调波点纹理与齐刘海卡通小女孩人物。本 Skill 只产出提示词文字，不调用绘图工具、不发布内容。最适合需要为公众号或小红书产出统一风格科普配图的创作者；不适用于写实摄影或非插画风格。"
+author-en: "sonia0u"
+author-cn: "sonia0u"
+source: community

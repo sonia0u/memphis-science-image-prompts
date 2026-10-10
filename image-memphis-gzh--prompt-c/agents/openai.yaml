@@ -1,0 +1,4 @@
+interface:
+  display_name: "image-memphis-gzh--prompt-c"
+  short_description: "为小红书和公众号文章生成三至五张孟菲斯扁平插画风科普图提示词"
+  default_prompt: "使用 $image-memphis-gzh--prompt-c 将这篇完整文章转为一套孟菲斯扁平风科普图提示词。"
